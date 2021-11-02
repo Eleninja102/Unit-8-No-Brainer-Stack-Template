@@ -57,7 +57,7 @@ template<class Type>
 void Stack<Type>::push(Type data){
     Node<Type> *toAdd = new Node<Type>;
     toAdd ->data = data;
-    toAdd->next = nullptr;
+    //toAdd->next = nullptr;
 
     if(top == nullptr)/*empty stack*/{
         top = toAdd;
@@ -81,7 +81,7 @@ Type Stack<Type>::peak(){
 
 template<class Type>
 void Stack<Type>::pop(){
-    if(isEmpty()){
+    if(!isEmpty()){
         Node<Type> *temp = top;
         top = top->next;
         delete temp;

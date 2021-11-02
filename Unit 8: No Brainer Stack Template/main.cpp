@@ -39,7 +39,8 @@ int main() {
         
    }
 cout << myIntStack<<endl;
+    cout << "why";
     
-    return 0;
+    //return 0;
    // cout <<"?";
 }
